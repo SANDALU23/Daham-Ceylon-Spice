@@ -1,0 +1,191 @@
+import React, { memo } from 'react';
+import { Link } from 'react-router-dom';
+import { motion, useScroll, useTransform } from 'motion/react';
+import { ArrowRight, Award, MessageSquare, Truck, ShoppingBag, Mail, Phone } from 'lucide-react';
+
+const Hero = memo(() => {
+  const { scrollY } = useScroll();
+  const y1 = useTransform(scrollY, [0, 500], [0, 200]);
+
+  return (
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <motion.div 
+        style={{ y: y1 }}
+        className="absolute inset-0 z-0"
+      >
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <img 
+          src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=1920" 
+          alt="Premium Ceylon Spices"
+          className="w-full h-full object-cover"
+          loading="eager"
+          referrerPolicy="no-referrer"
+        />
+      </motion.div>
+
+      <div className="relative z-20 text-center px-6 max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <span className="inline-block px-4 py-1 bg-brand-gold/20 border border-brand-gold/30 text-brand-gold text-[10px] font-bold uppercase tracking-[0.3em] mb-6 rounded-full">
+            Established 2026
+          </span>
+          <h1 className="text-5xl md:text-8xl font-serif text-white leading-tight mb-8">
+            The Purest <span className="italic text-brand-gold">Ceylon Soul</span> <br /> in Every Grain.
+          </h1>
+          <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+            Directly sourced from the heart of Sri Lankan hills. We deliver premium grade, ethically grown spices to the global market with unmatched purity standards.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link to="/collection" className="w-full sm:w-auto px-10 py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-brand-mustard transition-all transform hover:scale-105 flex items-center justify-center gap-2">
+              Explore Collection <ArrowRight size={18} />
+            </Link>
+            <Link to="/contact" className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center">
+              Bulk Quote (B2B)
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+
+      <motion.div 
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-white/50"
+      >
+        <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent mx-auto" />
+      </motion.div>
+    </section>
+  );
+});
+
+const Features = memo(() => {
+  const features = [
+    {
+      icon: <Award className="w-8 h-8 text-brand-gold" />,
+      title: "More for Less",
+      desc: "Our spices have a concentrated flavor that is more intense than other brands, meaning you use less and still achieve rich, authentic taste."
+    },
+    {
+      icon: <MessageSquare className="w-8 h-8 text-brand-gold" />,
+      title: "Customer Service",
+      desc: "Service is essential to our brand ethos. Our team is committed to quick responses and providing personalized services to meet specific needs."
+    },
+    {
+      icon: <Truck className="w-8 h-8 text-brand-gold" />,
+      title: "On-time Delivery",
+      desc: "We know that timely delivery is crucial for our customers, which is why we have a reliable shipping and logistics system in place."
+    },
+    {
+      icon: <ShoppingBag className="w-8 h-8 text-brand-gold" />,
+      title: "Bulk Options",
+      desc: "We offer bulk pricing options for larger quantities, ideal for players in the F&B industry looking to control costs without sacrificing quality."
+    }
+  ];
+
+  return (
+    <section className="py-24 px-6 bg-brand-cream dark:bg-brand-dark/40">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-serif mb-4">Why Choose us?</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+          {features.map((f, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="text-center group"
+            >
+              <div className="mb-6 flex justify-center transform group-hover:scale-110 transition-transform duration-300">
+                {f.icon}
+              </div>
+              <h3 className="text-xl font-serif mb-4">{f.title}</h3>
+              <p className="text-muted text-sm leading-relaxed">{f.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+});
+
+const CTA = memo(() => (
+  <section className="py-24 px-6 bg-brand-cream dark:bg-brand-dark text-brand-dark dark:text-white relative overflow-hidden">
+    <div className="absolute inset-0 opacity-10">
+      <img 
+        src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&q=80&w=1920" 
+        alt="Spice Background" 
+        className="w-full h-full object-cover"
+        loading="lazy"
+        referrerPolicy="no-referrer"
+      />
+    </div>
+    <div className="max-w-7xl mx-auto relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 className="text-4xl md:text-7xl font-serif mb-8 leading-tight">
+            Partner with the Soul of Ceylon
+          </h2>
+          <p className="text-muted dark:text-white/60 text-lg mb-10 max-w-lg">
+            For global B2B partnerships and bulk export inquiries, please provide your details and our export relations team will reach out within 24 hours.
+          </p>
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center">
+                <Mail className="text-brand-gold w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold uppercase tracking-widest">EXPORTS@DAHAMCEYLON.COM</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center">
+                <Phone className="text-brand-gold w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold uppercase tracking-widest">JOIN OUR WHATSAPP CHANNEL</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-brand-dark/5 dark:bg-white/5 backdrop-blur-xl p-8 md:p-12 border border-brand-dark/10 dark:border-white/10 rounded-sm">
+          <h3 className="text-2xl font-serif mb-8">Inquiries</h3>
+          <form className="space-y-6">
+            <div>
+              <input 
+                type="email" 
+                placeholder="Your Email Address" 
+                className="w-full bg-transparent border-b border-brand-dark/20 dark:border-white/20 py-3 text-brand-dark dark:text-white focus:border-brand-gold outline-none transition-colors"
+                required
+              />
+            </div>
+            <div>
+              <textarea 
+                placeholder="Tell us about your requirements" 
+                rows={4}
+                className="w-full bg-transparent border-b border-brand-dark/20 dark:border-white/20 py-3 text-brand-dark dark:text-white focus:border-brand-gold outline-none transition-colors"
+                required
+              />
+            </div>
+            <button className="w-full py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-brand-mustard transition-all">
+              Submit Export Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+));
+
+const Home = () => {
+  return (
+    <main>
+      <Hero />
+      <Features />
+      <CTA />
+    </main>
+  );
+};
+
+export default Home;

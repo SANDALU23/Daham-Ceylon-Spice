@@ -1,0 +1,46 @@
+import React, { memo } from 'react';
+import { motion } from 'motion/react';
+import { ShieldCheck, Globe, Award, Leaf } from 'lucide-react';
+
+const Certification = memo(() => {
+  const certifications = [
+    { name: "Organic Certified", icon: <ShieldCheck className="w-10 h-10 text-brand-gold" />, desc: "Certified by international organic standards for purity and sustainability." },
+    { name: "Fair Trade", icon: <Globe className="w-10 h-10 text-brand-gold" />, desc: "Ensuring fair compensation and ethical treatment for all our farming partners." },
+    { name: "ISO 22000", icon: <Award className="w-10 h-10 text-brand-gold" />, desc: "Global food safety management standards strictly followed in our facilities." },
+    { name: "Non-GMO", icon: <Leaf className="w-10 h-10 text-brand-gold" />, desc: "Pure, natural seeds with no genetic modification, preserving original Ceylon flavor." }
+  ];
+
+  return (
+    <main className="py-32 px-6 bg-brand-cream dark:bg-brand-dark text-brand-dark dark:text-white min-h-screen flex items-center">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.3em] mb-4 block">Quality Guaranteed</span>
+          <h2 className="text-4xl md:text-6xl font-serif mb-8">Our Certifications</h2>
+          <p className="text-muted dark:text-white/50 max-w-2xl mx-auto">
+            We hold ourselves to the highest global standards to ensure that every grain of spice leaving our facility is of the utmost quality and safety.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {certifications.map((cert, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="p-8 border border-brand-dark/10 dark:border-white/10 rounded-sm hover:border-brand-gold/50 transition-colors group text-center"
+            >
+              <div className="mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                {cert.icon}
+              </div>
+              <h3 className="text-xl font-serif mb-4 text-brand-gold">{cert.name}</h3>
+              <p className="text-muted dark:text-white/40 text-sm leading-relaxed">{cert.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+});
+
+export default Certification;
