@@ -30,7 +30,7 @@ const About = memo(() => (
       >
         <div className="aspect-[3/4] relative z-10">
           <img 
-            src="https://images.unsplash.com/photo-1599148400620-8e1ff0bf28d8?auto=format&fit=crop&q=80&w=800" 
+            src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&q=80&w=800" 
             alt="Traditional Spice Crafting"
             className="w-full h-full object-cover rounded-lg shadow-xl"
             loading="lazy"

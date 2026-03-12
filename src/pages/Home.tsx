@@ -48,9 +48,6 @@ const Hero = memo(() => {
           initial="hidden"
           animate="visible"
         >
-          <motion.span variants={itemVariants} className="inline-block px-4 py-1 bg-brand-gold/20 border border-brand-gold/30 text-brand-gold text-[10px] font-bold uppercase tracking-[0.3em] mb-6 rounded-full">
-            Established 2026
-          </motion.span>
           <motion.h1 variants={itemVariants} className="text-5xl md:text-8xl font-serif text-white leading-tight mb-8">
             The Purest <span className="italic text-brand-gold">Ceylon Soul</span> <br /> in Every Grain.
           </motion.h1>
