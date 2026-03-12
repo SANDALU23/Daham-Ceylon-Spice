@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = memo(() => (
   <main className="py-32 px-6 bg-brand-cream dark:bg-brand-dark text-brand-dark dark:text-white min-h-screen flex items-center relative overflow-hidden">
@@ -32,19 +32,31 @@ const Contact = memo(() => (
               whileHover={{ x: 10 }}
               className="flex items-center gap-4 cursor-pointer"
             >
-              <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center shrink-0">
                 <Mail className="text-brand-gold w-5 h-5" />
               </div>
-              <span className="text-sm font-bold uppercase tracking-widest">EXPORTS@DAHAMCEYLON.COM</span>
+              <span className="text-sm font-bold uppercase tracking-widest break-all">dahamceylonspice@gmail.com</span>
             </motion.div>
+            <motion.a 
+              href="https://wa.me/64223104144"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ x: 10 }}
+              className="flex items-center gap-4 cursor-pointer"
+            >
+              <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center shrink-0">
+                <Phone className="text-brand-gold w-5 h-5" />
+              </div>
+              <span className="text-sm font-bold uppercase tracking-widest">JOIN OUR WHATSAPP CHANNEL</span>
+            </motion.a>
             <motion.div 
               whileHover={{ x: 10 }}
               className="flex items-center gap-4 cursor-pointer"
             >
-              <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center">
-                <Phone className="text-brand-gold w-5 h-5" />
+              <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center shrink-0">
+                <MapPin className="text-brand-gold w-5 h-5" />
               </div>
-              <span className="text-sm font-bold uppercase tracking-widest">JOIN OUR WHATSAPP CHANNEL</span>
+              <span className="text-sm font-bold uppercase tracking-widest leading-relaxed">24A, Totara View, Wellsford, 0900, Auckland, New Zealand</span>
             </motion.div>
           </div>
         </motion.div>

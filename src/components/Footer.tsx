@@ -64,9 +64,9 @@ const Footer = memo(() => (
         <motion.div variants={itemVariants}>
           <h4 className="text-sm font-bold uppercase tracking-widest mb-8 text-brand-gold">Contact</h4>
           <ul className="space-y-4 text-sm text-muted dark:text-white/60">
-            <li className="flex items-center gap-3 hover:text-brand-gold transition-colors cursor-pointer"><Mail size={16} /> hello@dahamceylon.com</li>
-            <li className="flex items-center gap-3 hover:text-brand-gold transition-colors cursor-pointer"><Phone size={16} /> +94 11 234 5678</li>
-            <li className="flex items-center gap-3 hover:text-brand-gold transition-colors cursor-pointer"><MapPin size={16} /> Colombo, Sri Lanka</li>
+            <li className="flex items-center gap-3 hover:text-brand-gold transition-colors cursor-pointer"><Mail size={16} className="shrink-0" /> <span className="break-all">dahamceylonspice@gmail.com</span></li>
+            <li className="flex items-center gap-3 hover:text-brand-gold transition-colors cursor-pointer"><Phone size={16} className="shrink-0" /> +64 22 310 4144</li>
+            <li className="flex items-start gap-3 hover:text-brand-gold transition-colors cursor-pointer"><MapPin size={16} className="shrink-0 mt-1" /> <span>24A, Totara View, Wellsford, 0900, Auckland, New Zealand</span></li>
           </ul>
         </motion.div>
 

@@ -40,7 +40,7 @@ const ProductCard = memo(({ title, image, tag, description }: ProductCardProps) 
     </p>
     <div className="flex flex-col gap-3">
       <a 
-        href={`https://wa.me/yournumber?text=Inquiry about ${title}`}
+        href={`https://wa.me/64223104144?text=Inquiry about ${title}`}
         target="_blank"
         rel="noopener noreferrer"
         className="w-full py-3 bg-brand-gold text-brand-dark text-[10px] font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-brand-mustard transition-colors rounded-md shadow-sm hover:shadow-md"

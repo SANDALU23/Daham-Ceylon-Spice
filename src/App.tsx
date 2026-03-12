@@ -40,7 +40,7 @@ export default function App() {
 
         {/* Floating WhatsApp */}
         <a 
-          href="https://wa.me/yournumber" 
+          href="https://wa.me/64223104144" 
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Contact us on WhatsApp"
