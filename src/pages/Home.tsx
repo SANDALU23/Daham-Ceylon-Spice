@@ -56,10 +56,10 @@ const Hero = memo(() => {
             Directly sourced from the heart of Sri Lankan hills. We deliver premium grade, ethically grown spices to the global market with unmatched purity standards.
           </motion.p>
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/collection" className="w-full sm:w-auto px-10 py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-brand-mustard transition-all transform hover:scale-105 flex items-center justify-center gap-2">
+            <Link to="/collection" className="w-full sm:w-auto px-10 py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-brand-mustard transition-all transform hover:scale-105 flex items-center justify-center gap-2 rounded-full">
               Explore Collection <ArrowRight size={18} />
             </Link>
-            <Link to="/contact" className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center">
+            <Link to="/contact" className="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center rounded-full">
               Bulk Quote (B2B)
             </Link>
           </motion.div>
@@ -236,7 +236,7 @@ const CTA = memo(() => (
               type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-brand-mustard transition-all rounded-md"
+              className="w-full py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-brand-mustard transition-all rounded-full"
             >
               Submit Export Request
             </motion.button>
@@ -252,25 +252,25 @@ const FeaturedProducts = memo(() => {
     {
       title: "Chilli Powder",
       tag: "Organic Certified",
-      image: "https://images.unsplash.com/photo-1588165171080-c89acfa5ee83?",
+      image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?",
       description: "Fine vibrant red powder sourced from the central province, sun-dried and cold-ground to preserve essential oils."
     },
     {
       title: "Chilli Pieces",
       tag: "Premium Grade",
-      image: "https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?",
+      image: "https://images.unsplash.com/photo-1509358271058-acd22cc93898?",
       description: "Coarsely crushed sun-dried chillies from Matale. Balanced heat with exceptional texture for culinary exports."
     },
     {
       title: "Curry Powder",
       tag: "Heritage Blend",
-      image: "https://images.unsplash.com/photo-1606913084603-3e7702b01627?",
+      image: "https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?",
       description: "A complex heritage blend of 12 hand-selected spices, slow-roasted to a deep aromatic profile."
     },
     {
       title: "Turmeric Powder",
       tag: "High Curcumin",
-      image: "https://images.unsplash.com/photo-1615485290382-441e4d019cb5?",
+      image: "https://images.unsplash.com/photo-1532336414038-cb11d7c50218?",
       description: "Bright golden-yellow powder with high curcumin content, traditionally processed for pure potency."
     }
   ];
