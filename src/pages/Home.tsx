@@ -207,7 +207,15 @@ const CTA = memo(() => (
           className="bg-brand-dark/5 backdrop-blur-xl p-8 md:p-12 border border-brand-dark/10 rounded-xl shadow-2xl"
         >
           <h3 className="text-2xl font-serif mb-8">Inquiries</h3>
-          <form className="space-y-6">
+          <form 
+            className="space-y-6"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const email = (e.target as any).elements[0].value;
+              const message = (e.target as any).elements[1].value;
+              window.location.href = `mailto:dahamceylonspice@gmail.com?subject=Export Inquiry from ${email}&body=${encodeURIComponent(message)}`;
+            }}
+          >
             <div>
               <input 
                 type="email" 
@@ -225,6 +233,7 @@ const CTA = memo(() => (
               />
             </div>
             <motion.button 
+              type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="w-full py-4 bg-brand-gold text-brand-dark font-bold uppercase tracking-widest hover:bg-brand-mustard transition-all rounded-md"
