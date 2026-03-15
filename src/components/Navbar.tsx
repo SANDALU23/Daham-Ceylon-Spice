@@ -36,7 +36,7 @@ const Navbar = memo(({ isDark, toggleTheme }: NavbarProps) => {
         <Link to="/" className="flex items-center gap-3">
           <div className="h-12 w-auto flex items-center justify-center">
             <img 
-              src="https://yqdppggiipjbpowzrhok.supabase.co/storage/v1/object/sign/Logo/WhatsApp_Image_2569-03-05_at_19.14.25-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNmE4YjRlNC1jMTY2LTQwMGEtYTI4Mi1mYWY0YjY3OGE1YTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMb2dvL1doYXRzQXBwX0ltYWdlXzI1NjktMDMtMDVfYXRfMTkuMTQuMjUtcmVtb3ZlYmctcHJldmlldy5wbmciLCJpYXQiOjE3NzI5OTMwNDAsImV4cCI6MTgwNDUyOTA0MH0.8ZPHZShHp45DGGR8Btb5g-fS3M5Ktp2f7O3EFDtyh8Y" 
+              src="https://yqdppggiipjbpowzrhok.supabase.co/storage/v1/object/sign/Logo/WhatsApp_Image_2569-03-05_at_19.14.25-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNmE4YjRlNC1jMTY2LTQwMGEtYTI4Mi1mYWY0YjY3OGE1YTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMb2dvL1doYXRzQXBwX0ltYWdlXzI1NjktMDMtMDVfYXRfMTkuMTQuMjUtcmVtb3ZlYmctcHJldmlldy5wbmciLCJpYXQiOjE3NzM2MDIzMzEsImV4cCI6MTc3NDQ2NjMzMX0.p1w3Pwa4bhceT-jt2k3Ab7hgTNUPdY1268FXYY9te7k" 
               alt="Daham Ceylon Spice Logo" 
               className="h-full w-auto object-contain"
               referrerPolicy="no-referrer"

@@ -46,8 +46,9 @@ const Footer = memo(() => (
           <div className="flex items-center gap-3 mb-8">
             <div className="h-12 w-auto flex items-center justify-center">
               <img 
-                src="https://yqdppggiipjbpowzrhok.supabase.co/storage/v1/object/sign/Logo/Whatsapplogo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNmE4YjRlNC1jMTY2LTQwMGEtYTI4Mi1mYWY0YjY3OGE1YTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMb2dvL1doYXRzYXBwbG9nby5wbmciLCJpYXQiOjE3NzM1NzM5NDcsImV4cCI6MjQwNDI5Mzk0N30.hco_8BqRUmwAV-LzprdYivCWpt_VrqS3lT4wE5X7wtk" 
-                alt="Daham Ceylon Spice Logo" 
+              
+                src="https://yqdppggiipjbpowzrhok.supabase.co/storage/v1/object/sign/Logo/WhatsApp_Image_2569-03-05_at_19.14.25-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNmE4YjRlNC1jMTY2LTQwMGEtYTI4Mi1mYWY0YjY3OGE1YTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMb2dvL1doYXRzQXBwX0ltYWdlXzI1NjktMDMtMDVfYXRfMTkuMTQuMjUtcmVtb3ZlYmctcHJldmlldy5wbmciLCJpYXQiOjE3NzM2MDIzMzEsImV4cCI6MTc3NDQ2NjMzMX0.p1w3Pwa4bhceT-jt2k3Ab7hgTNUPdY1268FXYY9te7k" 
+                alt="Daham Ceylon Spice " 
                 className="h-full w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
