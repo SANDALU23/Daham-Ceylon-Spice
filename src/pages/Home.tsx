@@ -320,14 +320,38 @@ const FeaturedProducts = memo(() => {
     {
       title: "Curry Powder",
       tag: "Heritage Blend",
-      image: "https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c",
-      description: "A complex heritage blend of 12 hand-selected spices, slow-roasted to a deep aromatic profile."
+      image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0034-removebg-preview.png",
+      description: "An aromatic and flavourful blend of spices (cumin, fennel seeds, coriander seeds, cinnamon, green cardamom, cloves and curry leaves) is used in almost all traditional Sri Lankan curries."
     },
     {
       title: "Turmeric Powder",
       tag: "High Curcumin",
       image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5",
       description: "Bright golden-yellow powder with high curcumin content, traditionally processed for pure potency."
+    },
+    {
+      title: "Chilli Pieces",
+      tag: "Premium Grade",
+      image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0021-removebg-preview.png",
+      description: "Our chilli pieces are a great addition to any dish as a garnish or for added flavour, instantly elevate your meals."
+    },
+    {
+      title: "Fenugreek",
+      tag: "Premium Grade",
+      image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0107-removebg-preview.png",
+      description: "Fenugreek Seeds are harvested and processed for packaging at our state-of-the-art processing facility."
+    },
+    {
+      title: "Fennel",
+      tag: "Premium Grade",
+      image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0115-removebg-preview.png",
+      description: "Fennel seeds have an aniseed aroma and taste that is used throughout Sri Lankan cuisine."
+    },
+    {
+      title: "Mustard",
+      tag: "Premium Grade",
+      image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0051-removebg-preview.png",
+      description: "Raw mustard pods are harvested from the Mustard plant and processed under strict food safety guidelines."
     }
   ];
 
