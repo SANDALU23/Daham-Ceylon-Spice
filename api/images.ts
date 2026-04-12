@@ -30,9 +30,9 @@ export default function handler(req: any, res: any) {
     },
     {
       id: '5',
-      url: 'https://picsum.photos/seed/spice5/800/600',
-      title: 'Cloves',
-      description: 'Premium quality whole cloves with rich essential oils.',
+      url: 'https://rayinfood.com/wp-content/uploads/2022/05/cloves.png',
+      title: 'Clove',
+      description: 'Raw clove buds are harvested from our cultivation of clove trees and processed by cleaning and drying under strict hygienic conditions. The dried clove buds are then packed into premium quality pouches that ensure freshness and aroma are retained till use.',
       category: 'Spices'
     },
     {

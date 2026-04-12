@@ -8,25 +8,25 @@ const Collection = memo(() => {
     {
       title: "Chilli Powder",
       tag: "Organic Certified",
-      image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?",
+      image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d",
       description: "Fine vibrant red powder sourced from the central province, sun-dried and cold-ground to preserve essential oils."
     },
     {
-      title: "Chilli Pieces",
+      title: "Clove",
       tag: "Premium Grade",
-      image: "https://images.unsplash.com/photo-1509358271058-acd22cc93898?",
-      description: "Coarsely crushed sun-dried chillies from Matale. Balanced heat with exceptional texture for culinary exports."
+      image: "https://rayinfood.com/wp-content/uploads/2022/05/cloves.png",
+      description: "Raw clove buds are harvested from our cultivation of clove trees and processed by cleaning and drying under strict hygienic conditions."
     },
     {
       title: "Curry Powder",
       tag: "Heritage Blend",
-      image: "https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?",
+      image: "https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c",
       description: "A complex heritage blend of 12 hand-selected spices, slow-roasted to a deep aromatic profile."
     },
     {
       title: "Turmeric Powder",
       tag: "High Curcumin",
-      image: "https://images.unsplash.com/photo-1532336414038-cb11d7c50218?",
+      image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5",
       description: "Bright golden-yellow powder with high curcumin content, traditionally processed for pure potency."
     }
   ];
