@@ -340,6 +340,12 @@ const FeaturedProducts = memo(() => {
       tag: "Premium Grade",
       image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0051-removebg-preview.png",
       description: "Raw mustard pods are harvested from the Mustard plant and processed under strict food safety guidelines."
+    },
+    {
+      title: "Black Pepper",
+      tag: "Premium Grade",
+      image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0041-removebg-preview.png",
+      description: "Hand-picked organic black pepper from our estate, sun-dried to perfection to maintain its bold flavor and aroma."
     }
   ];
 
