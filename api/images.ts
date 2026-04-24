@@ -15,13 +15,6 @@ export default function handler(req: any, res: any) {
       category: 'Spices'
     },
     {
-      id: '3',
-      url: 'https://picsum.photos/seed/spice3/800/600',
-      title: 'Pure Turmeric Powder',
-      description: 'High-curcumin turmeric powder processed naturally.',
-      category: 'Powders'
-    },
-    {
       id: '4',
       url: 'https://picsum.photos/seed/spice4/800/600',
       title: 'Green Cardamom',

@@ -6,12 +6,6 @@ import Carousel from '../components/Carousel';
 const Collection = memo(() => {
   const products = [
     {
-      title: "Chilli Powder",
-      tag: "Organic Certified",
-      image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d",
-      description: "Fine vibrant red powder sourced from the central province, sun-dried and cold-ground to preserve essential oils."
-    },
-    {
       title: "Clove",
       tag: "Premium Grade",
       image: "https://rayinfood.com/wp-content/uploads/2022/05/cloves.png",
@@ -22,12 +16,6 @@ const Collection = memo(() => {
       tag: "Heritage Blend",
       image: "https://rayinfood.com/wp-content/uploads/2022/05/2K1A0034-removebg-preview.png",
       description: "An aromatic and flavourful blend of spices (cumin, fennel seeds, coriander seeds, cinnamon, green cardamom, cloves and curry leaves) is used in almost all traditional Sri Lankan curries."
-    },
-    {
-      title: "Turmeric Powder",
-      tag: "High Curcumin",
-      image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5",
-      description: "Bright golden-yellow powder with high curcumin content, traditionally processed for pure potency."
     },
     {
       title: "Chilli Pieces",
