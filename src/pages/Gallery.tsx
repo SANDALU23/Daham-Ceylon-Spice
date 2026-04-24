@@ -42,20 +42,20 @@ const Gallery = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-brand-dark">
+      <div className="min-h-screen flex items-center justify-center bg-brand-cream dark:bg-brand-dark">
         <Loader2 className="w-10 h-10 text-brand-gold animate-spin" />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-brand-dark pt-24 pb-20 px-6">
+    <div className="min-h-screen bg-brand-cream dark:bg-brand-dark pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         <header className="mb-12 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-serif text-brand-gold mb-4"
+            className="text-4xl md:text-5xl font-serif text-brand-dark dark:text-brand-gold mb-4"
           >
             Our Gallery
           </motion.h1>
@@ -63,15 +63,15 @@ const Gallery = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-white/60 max-w-2xl mx-auto"
+            className="text-muted dark:text-white/60 max-w-2xl mx-auto"
           >
             Explore our collection of premium Ceylon spices, captured directly from our plantations and processing facilities.
           </motion.p>
         </header>
 
         {error ? (
-          <div className="text-center py-20 bg-white/5 rounded-2xl border border-white/10">
-            <p className="text-red-400">{error}</p>
+          <div className="text-center py-20 bg-brand-dark/5 dark:bg-white/5 rounded-2xl border border-brand-dark/10 dark:border-white/10">
+            <p className="text-red-500 dark:text-red-400">{error}</p>
           </div>
         ) : (
           <motion.div 
@@ -84,7 +84,7 @@ const Gallery = () => {
               <motion.div
                 key={image.id}
                 variants={itemVariants}
-                className="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 aspect-[4/3]"
+                className="group relative overflow-hidden rounded-2xl bg-brand-dark/5 dark:bg-white/5 border border-brand-dark/10 dark:border-white/10 aspect-[4/3] shadow-sm hover:shadow-xl transition-shadow duration-500"
               >
                 <img 
                   src={image.url} 
@@ -92,14 +92,14 @@ const Gallery = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
                   <span className="text-brand-gold text-xs font-bold uppercase tracking-widest mb-2">
                     {image.category}
                   </span>
                   <h3 className="text-xl font-serif text-white mb-2">
                     {image.title}
                   </h3>
-                  <p className="text-white/70 text-sm line-clamp-2">
+                  <p className="text-white/80 text-sm line-clamp-2">
                     {image.description}
                   </p>
                 </div>
@@ -109,9 +109,9 @@ const Gallery = () => {
         )}
 
         {images.length === 0 && !loading && !error && (
-          <div className="text-center py-20 bg-white/5 rounded-2xl border border-white/10">
-            <ImageIcon className="w-12 h-12 text-white/20 mx-auto mb-4" />
-            <p className="text-white/40">No images found in the gallery.</p>
+          <div className="text-center py-20 bg-brand-dark/5 dark:bg-white/5 rounded-2xl border border-brand-dark/10 dark:border-white/10">
+            <ImageIcon className="w-12 h-12 text-brand-dark/20 dark:text-white/20 mx-auto mb-4" />
+            <p className="text-brand-dark/40 dark:text-white/40">No images found in the gallery.</p>
           </div>
         )}
       </div>
