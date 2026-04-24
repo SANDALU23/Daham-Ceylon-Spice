@@ -2,37 +2,44 @@ export default function handler(req: any, res: any) {
   const images = [
     {
       id: '1',
-      url: 'https://picsum.photos/seed/spice1/800/600',
-      title: 'Premium Cinnamon',
-      description: 'Hand-picked Ceylon cinnamon sticks from our finest plantations.',
+      url: 'https://rayinfood.com/wp-content/uploads/2022/05/2K1A0015-removebg-preview.png',
+      title: 'Chilli Powder',
+      description: 'Fine vibrant red powder sourced from the central province, sun-dried and cold-ground to preserve essential oils.',
       category: 'Spices'
     },
     {
       id: '2',
-      url: 'https://picsum.photos/seed/spice2/800/600',
-      title: 'Organic Black Pepper',
-      description: 'Sun-dried organic black pepper with intense aroma.',
+      url: 'https://rayinfood.com/wp-content/uploads/2022/05/2K1A0036-removebg-preview.png',
+      title: 'Turmeric Powder',
+      description: 'Bright golden-yellow powder with high curcumin content, traditionally processed for pure potency.',
       category: 'Spices'
     },
     {
+      id: '3',
+      url: 'https://rayinfood.com/wp-content/uploads/2022/05/2K1A0034-removebg-preview.png',
+      title: 'Curry Powder',
+      description: 'An aromatic and flavourful blend of spices is used in almost all traditional Sri Lankan curries.',
+      category: 'Powders'
+    },
+    {
       id: '4',
-      url: 'https://picsum.photos/seed/spice4/800/600',
-      title: 'Green Cardamom',
-      description: 'Aromatic green cardamom pods harvested at peak maturity.',
-      category: 'Spices'
+      url: 'https://rayinfood.com/wp-content/uploads/2022/05/2K1A0027-removebg-preview.png',
+      title: 'Roasted Curry Powder',
+      description: 'A deeply aromatic blend of roasted spices, perfect for meat and vegetable curries.',
+      category: 'Powders'
     },
     {
       id: '5',
       url: 'https://rayinfood.com/wp-content/uploads/2022/05/cloves.png',
-      title: 'Clove',
-      description: 'Raw clove buds are harvested from our cultivation of clove trees and processed by cleaning and drying under strict hygienic conditions. The dried clove buds are then packed into premium quality pouches that ensure freshness and aroma are retained till use.',
+      title: 'Cloves',
+      description: 'Raw clove buds are harvested from our cultivation of clove trees and processed by cleaning and drying under strict hygienic conditions.',
       category: 'Spices'
     },
     {
       id: '6',
-      url: 'https://picsum.photos/seed/spice6/800/600',
-      title: 'Nutmeg',
-      description: 'Whole nutmeg seeds with distinctive warm flavor.',
+      url: 'https://rayinfood.com/wp-content/uploads/2022/05/2K1A0041-removebg-preview.png',
+      title: 'Black Pepper',
+      description: 'Hand-picked organic black pepper from our estate, sun-dried to perfection to maintain its bold flavor and aroma.',
       category: 'Spices'
     },
     {
