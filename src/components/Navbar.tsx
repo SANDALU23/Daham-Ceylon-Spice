@@ -37,12 +37,23 @@ const Navbar = memo(({ isDark, toggleTheme }: NavbarProps) => {
         <Link to="/" className="flex items-center gap-3">
           <div className="h-12 w-auto flex items-center justify-center">
             <img 
-              src="https://yqdppggiipjbpowzrhok.supabase.co/storage/v1/object/sign/Logo/WhatsApp_Image_2569-03-05_at_19.14.25-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNmE4YjRlNC1jMTY2LTQwMGEtYTI4Mi1mYWY0YjY3OGE1YTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMb2dvL1doYXRzQXBwX0ltYWdlXzI1NjktMDMtMDVfYXRfMTkuMTQuMjUtcmVtb3ZlYmctcHJldmlldy5wbmciLCJpYXQiOjE3NzQ1MTU3NzMsImV4cCI6MTkwMDY1OTc3M30.nDaEhIrYbIQUFC1ttZ0P5EvodAAjlnDmPpJ8FGa9-zU" 
-              alt="Daham Ceylon Spice Logo" 
-              className="h-full w-auto object-contain"
+               src="https://yqdppggiipjbpowzrhok.supabase.co/storage/v1/object/sign/Logo/WhatsApp_Image_2569-03-05_at_19.14.25-removebg-preview.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iNmE4YjRlNC1jMTY2LTQwMGEtYTI4Mi1mYWY0YjY3OGE1YTUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJMb2dvL1doYXRzQXBwX0ltYWdlXzI1NjktMDMtMDVfYXRfMTkuMTQuMjUtcmVtb3ZlYmctcHJldmlldy5wbmciLCJpYXQiOjE3Nzc1NDk3MTIsImV4cCI6MTgwOTA4NTcxMn0._PGsdbfaqxERTshe_QkzZOLIiECOnBQM7nvChzqQwDU" 
+               alt="Daham Ceylon Spice Logo" 
+               className="h-full w-auto object-contain transition-opacity duration-300"
+              onError={(e) => {
+                const img = e.target as HTMLImageElement;
+                img.style.display = 'none';
+                const parent = img.parentElement;
+                if (parent && !parent.querySelector('.logo-fallback')) {
+                  const fallback = document.createElement('div');
+                  fallback.className = 'logo-fallback w-10 h-10 bg-brand-gold rounded-full flex items-center justify-center text-brand-dark font-bold text-xs';
+                  fallback.innerText = 'DCS';
+                  parent.appendChild(fallback);
+                }
+              }}
             />
           </div>
-          <span className="text-xl font-bold tracking-tighter text-brand-gold uppercase hidden sm:block">
+          <span className="text-xl font-bold tracking-tighter text-brand-gold uppercase block">
             Daham Ceylon <span className="text-white">Spice</span>
           </span>
         </Link>
